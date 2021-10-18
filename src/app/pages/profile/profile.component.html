@@ -1,0 +1,44 @@
+<app-navigation title='PROFILE'></app-navigation>
+<div class='profile-container'>
+    <div class='content-container'>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <img mat-card-avatar src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.6435-9/145323225_5061450840593121_6203099231168770596_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEaZ4joBur87NJpID3Vcgu9z7uFw2wx7W_Pu4XDbDHtb3McQgttqofuOb6rK-xElMGoXVZFoZjHzUiQewwG7RmG&_nc_ohc=MVuVc-CTQ8oAX8xB6IZ&_nc_ht=scontent.fceb1-3.fna&oh=3ab45b715ca8d4646d276965190b6523&oe=61908F1D" alt="avatar" class='profile'>
+              <mat-card-title>Lebasora , John Jeffeson</mat-card-title>
+              <mat-card-subtitle>BSIT-3E</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.6435-9/129901153_4836546369750237_3995795248775445069_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeH7n3yeBAZXN8z82An8lqONWqb_m5W1kLxapv-blbWQvPJYJf3qgsDuQ7zlJSNY8oNEEKp0xHVEL8wNSzv6CTRd&_nc_ohc=M2zefRRFWTgAX9fmsDY&_nc_ht=scontent.fceb1-3.fna&oh=b8ed8e50e633cdf573442218c2645268&oe=6193A01F" alt="cute_cat" class='cat-photo'>
+                <mat-list>
+                    <mat-list-item>
+                        <mat-icon>done</mat-icon>
+                        <p>Age: 18</p>
+                    </mat-list-item>
+                
+                    <mat-list-item>
+                        <mat-icon>location_on</mat-icon>
+                        <p>Address: Tacloban City</p>
+                    </mat-list-item>
+                
+                    <mat-list-item>
+                        <mat-icon>phone_contact</mat-icon>
+                        <p>Contact #: 09772671***</p>
+                    </mat-list-item>
+                
+                    <mat-card-actions>
+                        <button mat-button (click)='isClickLike=!isClickLike' 
+                        [ngClass]='{"like" : isClickLike }' ><mat-icon>thumb_up</mat-icon></button>
+                        <button mat-button (click)='isClickHeart=!isClickHeart' 
+                        [ngClass]='{"heart" : isClickHeart }'><mat-icon>favorite</mat-icon></button>
+                    </mat-card-actions>
+                    
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Leave a comment...</mat-label>
+                        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                    </mat-form-field>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
