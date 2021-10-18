@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { date } from 'joi';
 
 @Component({
   selector: 'app-navigation',
