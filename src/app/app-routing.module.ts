@@ -8,7 +8,7 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'gallery',component:GalleryComponent},
   {path:'profile',component:ProfileComponent},
-  {path:'**',component:HomeComponent},
+  {path:'**',redirectTo:''},
 ];
 
 @NgModule({
